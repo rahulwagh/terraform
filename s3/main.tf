@@ -1,5 +1,3 @@
-provider "spacelift" {}
-
 resource "aws_s3_bucket" "spacelift-test1-s3" {
   bucket = "spacelift-test1-s3"
   acl = "private"
