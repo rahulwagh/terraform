@@ -1,11 +1,10 @@
 
 terraform {
   required_providers {
-    spacelift = {
-      source = "downloads.spacelift.dev/spacelift-io/spacelift"
-    }
+    aws    = { source = "hashicorp/aws" }
   }
 }
+
 
 resource "aws_s3_bucket" "spacelift-test1-s3" {
   bucket = "spacelift-test1-s3"
