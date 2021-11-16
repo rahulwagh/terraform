@@ -1,10 +1,4 @@
-terraform {
-  required_providers {
-    spacelift = {
-      source = "registry.terraform.io/spacelift-io/spacelift"
-    }
-  }
-}
+provider "spacelift" {}
 
 provider "aws" {
   region = "eu-central-1"
