@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "eu-central-1"
+  alias  = "eu-central-s3"
+}
 
 resource "aws_s3_bucket" "spacelift-test1-s3" {
   bucket = "spacelift-test1-s3"
