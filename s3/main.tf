@@ -1,11 +1,7 @@
 
-terraform {
-  required_providers {
-    aws    = { source = "hashicorp/aws" }
-    spacelift    = { source = "registry.terraform.io/spacelift-io/spacelift" }
-  }
-}
+variable "spacelift_run_id" {}
 
+provider "aws" {}
 
 resource "aws_s3_bucket" "spacelift-test1-s3" {
   bucket = "spacelift-test1-s3"
