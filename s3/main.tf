@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     spacelift = {
-      source = "spacelift-io/spacelift"
+      source = "registry.terraform.io/spacelift-io/spacelift"
     }
   }
 }
