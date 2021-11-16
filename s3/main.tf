@@ -1,3 +1,11 @@
+terraform {
+  required_providers {
+    spacelift = {
+      source = "spacelift-io/spacelift"
+    }
+  }
+}
+
 provider "aws" {
   region = "eu-central-1"
   alias  = "eu-central-s3"
